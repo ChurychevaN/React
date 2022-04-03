@@ -1,9 +1,14 @@
+import React from 'react';
 import './Expenses.css';
 import Card from './Card';
 import ExpenseItem from './ExpenseItem';
 
 
 function Expenses(props){
+	if (!props) {
+		return
+	}
+
 	return (
 		<Card className="expenses">
 			<ExpenseItem
